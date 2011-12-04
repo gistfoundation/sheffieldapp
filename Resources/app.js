@@ -1,7 +1,7 @@
 // this sets the background color of the master UIView (when there are no windows/tab groups on it)
 Titanium.UI.setBackgroundColor('#000');
 
-var MyModule = require('lib/mod');
+var MyModule = require('lib/controller/home');
 
 // create tab group
 var tabGroup = Titanium.UI.createTabGroup();
@@ -51,8 +51,16 @@ var label2 = Titanium.UI.createLabel({
 	width:'auto'
 });
 
-win2.add(label2);
+// win2.add(label2);
 
+var mapview = Titanium.Map.createView({
+    mapType: Titanium.Map.STANDARD_TYPE,
+    region: {latitude:37.389569, longitude:-122.050212, latitudeDelta:0.1, longitudeDelta:0.1},
+    animate:true,
+    regionFit:true,
+    userLocation:false
+});
+win2.add(mapview);
 
 
 //
@@ -65,5 +73,5 @@ tabGroup.addTab(tab2);
 // open tab group
 tabGroup.open();
 
-MyModule.sayHello('fred');
+// MyModule.sayHello('fred');
 

@@ -16,3 +16,19 @@ Titanium is Copyright (c) 2009-2010 by Appcelerator, Inc. All Rights Reserved.
 Titanium is licensed under the Apache Public License (Version 2). Please
 see the LICENSE file for the full license.
 
+
+
+Notes for GIST Devs..
+I found the tutorial at http://wiki.appcelerator.org/display/guides/Cross+Platform+Navigation+Controller quite useful in the first place.
+
+Android devs
+
+
+
+
+Some notes on using android devices for debugging
+
+http://developer.android.com/guide/developing/device.html
+http://developer.appcelerator.com/question/113671/debugging-the-app-in-android-phone
+
+Having done this.. "Install to phone" option should appear in right click menu for project.
