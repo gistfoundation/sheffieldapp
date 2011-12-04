@@ -5,10 +5,10 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.004532 seconds on emulator to get ready
+[DEBUG] waited 0.005000 seconds on emulator to get ready
 [DEBUG] net.thegisthub.mobileopendata installed? False
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: /home/ibbo/Titanium Studio Workspace/sheffieldapp/Resources/app.js => /home/ibbo/Titanium Studio Workspace/sheffieldapp/build/android/bin/assets/Resources/app.js
+[TRACE] COPYING MODIFIED FILE: /home/ibbo/Titanium Studio Workspace/sheffieldapp/Resources/lib/view/map.js => /home/ibbo/Titanium Studio Workspace/sheffieldapp/build/android/bin/assets/Resources/lib/view/map.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: /home/ibbo/Titanium Studio Workspace/sheffieldapp/build/android/bin/assets/Resources/appicon.png
@@ -43,6 +43,13 @@ Logfile initialized
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: /home/ibbo/Titanium Studio Workspace/sheffieldapp/build/android/bin/app-unsigned.apk
+[DEBUG] from resource zip => assets/Resources/lib/controller/home.js
+[DEBUG] from resource zip => assets/Resources/lib/view/discover.js
+[DEBUG] from resource zip => assets/Resources/lib/view/discover_main.js
+[DEBUG] from resource zip => assets/Resources/lib/view/map.js
+[DEBUG] from resource zip => assets/Resources/lib/view/master_layout.js
+[DEBUG] from resource zip => assets/Resources/lib/view/settings.js
+[DEBUG] from resource zip => assets/Resources/lib/view/sub_nav_menu.js
 [DEBUG] from resource zip => assets/Resources/lib/mod.js
 [DEBUG] from resource zip => assets/Resources/KS_nav_ui.png
 [DEBUG] from resource zip => assets/Resources/KS_nav_views.png
@@ -89,6 +96,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.003670 seconds on emulator to get ready
+[DEBUG] waited 0.016963 seconds on emulator to get ready
 [INFO] Installing application on emulator
 [INFO] Application installed. Launch from drawer on Home Screen

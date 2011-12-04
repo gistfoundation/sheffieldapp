@@ -35,5 +35,6 @@
         </orientations>
     </iphone>
     <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <property name="ti.android.google.map.api.key">0NjuWsxwZ0UceT6jPZkTLamD7K_Kkz1ElTJBsZQ</property>
     <modules/>
 </ti:app>
