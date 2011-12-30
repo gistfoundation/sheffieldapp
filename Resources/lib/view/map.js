@@ -7,36 +7,46 @@ exports.getWindow = function() {
     backgroundColor:'#fff'
   });
 
+  var longitude = 0;
+  var latitude = 0;
+  var altitude = 0;
+  var heading = 0;
+  var accuracy = 0;
+  var speed = 0;
+  var timestamp = 0;
+  var altitudeAccuracy = 0;
+
+
+  Titanium.Geolocation.getCurrentPosition(function(e) {
+	if (!e.success || e.error)
+	{
+		currentLocation.text = 'error: ' + JSON.stringify(e.error);
+		Ti.API.info("Code translation: "+translateErrorCode(e.code));
+		alert('error ' + JSON.stringify(e.error));
+		return;
+	}
+	longitude = e.coords.longitude;
+	latitude = e.coords.latitude;
+	altitude = e.coords.altitude;
+	heading = e.coords.heading;
+	accuracy = e.coords.accuracy;
+	speed = e.coords.speed;
+	timestamp = e.coords.timestamp;
+	altitudeAccuracy = e.coords.altitudeAccuracy;
+	//Ti.API.info('speed ' + speed);
+	// currentLocation.text = 'long:' + longitude + ' lat: ' + latitude;
+	//Titanium.API.info('geo - current location: ' + new Date(timestamp) + ' long ' + longitude + ' lat ' + latitude + ' accuracy ' + accuracy);
+  });
+
   var mapview = Titanium.Map.createView({
     mapType: Titanium.Map.STANDARD_TYPE,
-    // region: {latitude:37.389569, longitude:-122.050212, latitudeDelta:0.1, longitudeDelta:0.1},
+    region: {latitude:latitude, longitude:longitude, latitudeDelta:0.1, longitudeDelta:0.1},
     animate:true,
     regionFit:true,
     userLocation:true
   });
+  
   mapview_win.add(mapview);
-
-  //Titanium.Geolocation.getCurrentPosition(function(e) {
-	//if (!e.success || e.error)
-	//{
-	//	currentLocation.text = 'error: ' + JSON.stringify(e.error);
-	//	Ti.API.info("Code translation: "+translateErrorCode(e.code));
-	//	alert('error ' + JSON.stringify(e.error));
-	//	return;
-	//}
-	//var longitude = e.coords.longitude;
-	//var latitude = e.coords.latitude;
-	//var altitude = e.coords.altitude;
-	//var heading = e.coords.heading;
-	//var accuracy = e.coords.accuracy;
-	//var speed = e.coords.speed;
-	//var timestamp = e.coords.timestamp;
-	//var altitudeAccuracy = e.coords.altitudeAccuracy;
-	//Ti.API.info('speed ' + speed);
-	//currentLocation.text = 'long:' + longitude + ' lat: ' + latitude;
-	//Titanium.API.info('geo - current location: ' + new Date(timestamp) + ' long ' + longitude + ' lat ' + latitude + ' accuracy ' + accuracy);
-  //});
-
   mapview_win.add(sub_nav_menu.getView());
   
   return mapview_win;

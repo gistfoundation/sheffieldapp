@@ -5,11 +5,10 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.004602 seconds on emulator to get ready
+[DEBUG] waited 0.004762 seconds on emulator to get ready
 [DEBUG] net.thegisthub.mobileopendata installed? False
 [INFO] Copying project resources..
 [TRACE] COPYING MODIFIED FILE: /home/ibbo/Titanium Studio Workspace/sheffieldapp/Resources/lib/view/map.js => /home/ibbo/Titanium Studio Workspace/sheffieldapp/build/android/bin/assets/Resources/lib/view/map.js
-[TRACE] COPYING MODIFIED FILE: /home/ibbo/Titanium Studio Workspace/sheffieldapp/Resources/lib/view/settings.js => /home/ibbo/Titanium Studio Workspace/sheffieldapp/build/android/bin/assets/Resources/lib/view/settings.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] copying app icon: /home/ibbo/Titanium Studio Workspace/sheffieldapp/build/android/bin/assets/Resources/appicon.png
@@ -97,6 +96,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.003690 seconds on emulator to get ready
+[DEBUG] waited 0.004271 seconds on emulator to get ready
 [INFO] Installing application on emulator
 [INFO] Application installed. Launch from drawer on Home Screen
