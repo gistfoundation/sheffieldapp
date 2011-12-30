@@ -18,13 +18,15 @@ see the LICENSE file for the full license.
 
 
 
+Debugging the sheffield mobile project:
+
+adb -d logcat
+
+
 Notes for GIST Devs..
 I found the tutorial at http://wiki.appcelerator.org/display/guides/Cross+Platform+Navigation+Controller quite useful in the first place.
 
 Android devs
-
-
-
 
 Some notes on using android devices for debugging
 
