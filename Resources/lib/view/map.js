@@ -2,7 +2,7 @@ var sub_nav_menu = require('lib/view/sub_nav_menu');
 
 exports.getWindow = function() {
 
-  var win1 = Titanium.UI.createWindow({  
+  var mapview_win = Titanium.UI.createWindow({  
     title:'Map',
     backgroundColor:'#fff'
   });
@@ -14,7 +14,7 @@ exports.getWindow = function() {
     regionFit:true,
     userLocation:true
   });
-  win1.add(mapview);
+  mapview_win.add(mapview);
 
   //Titanium.Geolocation.getCurrentPosition(function(e) {
 	//if (!e.success || e.error)
@@ -37,7 +37,7 @@ exports.getWindow = function() {
 	//Titanium.API.info('geo - current location: ' + new Date(timestamp) + ' long ' + longitude + ' lat ' + latitude + ' accuracy ' + accuracy);
   //});
 
-  win1.add(sub_nav_menu.getView());
+  mapview_win.add(sub_nav_menu.getView());
   
-  return win1;
+  return mapview_win;
 }
