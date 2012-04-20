@@ -1,21 +1,20 @@
-Welcome to your Appcelerator Titanium Mobile Project
+Sheffield App
+--------------
 
-This is a blank project.  Start by editing your application's app.js to 
-make your first mobile project using Titanium.
+We're building a mobile App for Sheffield to help people navigate the city and expose more if its loveliness.
+Once we're done it should be easy to find great places, events and transport links across the city.
+
+Please sign up to our mailing list to get involved in the discussion:
+https://groups.google.com/forum/?fromgroups&pli=1#!forum/sheffield-mobile-group
+
+We're meeting up next on May 12th at the GistLab for a hackday. Bring your laptops!
+http://openlabsheffield1205.eventbrite.co.uk/
+
+This will be followed swiftly on by another get together the week after:
+http://sheffieldmobile1205.eventbrite.co.uk/
 
 
-
-----------------------------------
-Stuff our legal folk make us say:
-
-Appcelerator, Appcelerator Titanium and associated marks and logos are 
-trademarks of Appcelerator, Inc. 
-
-Titanium is Copyright (c) 2009-2010 by Appcelerator, Inc. All Rights Reserved.
-
-Titanium is licensed under the Apache Public License (Version 2). Please
-see the LICENSE file for the full license.
-
+===========================================
 
 
 Debugging the sheffield mobile project:
